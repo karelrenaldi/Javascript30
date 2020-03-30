@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    rgb(110, 60, 132) 0px,
+    rgb(110, 60, 132) 17px,
+    rgb(167, 70, 127) 17px,
+    rgb(167, 70, 127) 34px,
+    rgb(52, 50, 136) 34px,
+    rgb(52, 50, 136) 51px
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.keys {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2em 3em;
+}
+
+.key {
+  cursor: pointer;
+  border-radius: 12px;
+  padding: 2em 2em;
+  width: 3%;
+  background: repeating-linear-gradient(
+    90deg,
+    rgb(32, 32, 32) 0px,
+    rgb(32, 32, 32) 2px,
+    rgb(33, 33, 33) 2px,
+    rgb(33, 33, 33) 4px,
+    rgb(34, 34, 34) 4px,
+    rgb(34, 34, 34) 6px,
+    rgb(33, 33, 33) 6px,
+    rgb(33, 33, 33) 8px,
+    rgb(36, 36, 36) 8px,
+    rgb(36, 36, 36) 10px,
+    rgb(35, 35, 35) 10px,
+    rgb(35, 35, 35) 12px,
+    rgb(33, 33, 33) 12px,
+    rgb(33, 33, 33) 14px,
+    rgb(32, 32, 32) 14px,
+    rgb(32, 32, 32) 16px,
+    rgb(36, 36, 36) 16px,
+    rgb(36, 36, 36) 18px,
+    rgb(34, 34, 34) 18px,
+    rgb(34, 34, 34) 20px,
+    rgb(35, 35, 35) 20px,
+    rgb(35, 35, 35) 22px,
+    rgb(35, 35, 35) 22px,
+    rgb(35, 35, 35) 24px
+  );
+  color: #fffdf9;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 9px 9px 40px -1px rgba(0, 0, 0, 0.59);
+  margin: 0 0 0 0.7em;
+  border: 3px solid black;
+}
+
+header {
+  position: absolute;
+  top: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.animation {
+  /* border: 1px solid white; */
+  transform: scale(0.8);
+  box-shadow: none;
+  transition: all 0.1s;
+}
