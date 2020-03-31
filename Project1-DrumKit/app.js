@@ -8,10 +8,10 @@ const run = currentKey => {
     },{once : true});
     keyAudio.currentTime = 0; // Rewind audio
     keyAudio.play();
-}
+};
 // When user use keyboard
 window.addEventListener("keyup",(e)=>{
     const currentKey = e.keyCode;
     if(!document.querySelector(`audio[data-key = "${e.keyCode}"]`)) return
     run(currentKey);
-})
+});
